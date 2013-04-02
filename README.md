@@ -6,7 +6,7 @@ Wordpress-Listing-Custom-Categories
 ####List Out Categories and Children
 ```php
 <?php
-$taxonomyName = "fruit";
+$taxonomyName = "yourCustomTaxonomyName";
 $terms = get_terms($taxonomyName,array('parent' => 0));
 foreach($terms as $term): ?>
     <ul>
