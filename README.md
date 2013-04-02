@@ -32,7 +32,7 @@ foreach($terms as $term): ?>
     <?php $term_children = get_term_children($term->term_id,$taxonomyName);
     foreach($term_children as $term_child_id): ?>
         <?php $term_child = get_term_by('id',$term_child_id,$taxonomyName); ?>
-        <li><a href="#<?php echo strtolower($term_child->name); ?>"><?php echo $term_child->name; ?></a></li>
+        <li><a href="#<?php echo strtolower($term_child->name); ?>"><?php echo $term_child->name; ?></a>
   		<ul>
 			<?php $child_name =  $term_child->name;?>
 			<?php
