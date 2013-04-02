@@ -1,4 +1,4 @@
-Wordpress-Listing-Custom-Categories
+Wordpress Listing Custom Taxonomies Attached to a Custom Post Type
 ===================================
 
 
