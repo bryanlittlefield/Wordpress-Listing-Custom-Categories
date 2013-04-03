@@ -13,7 +13,9 @@ foreach($terms as $term): ?>
     </ul>
 <?php endforeach; ?>
 
- <!-- List Out Categories and Children and Post Within -->
+
+
+<!-- List Out Categories and Children and Post Within -->
 <div>
 <?php
 $taxonomyName = "yourCustomTaxonomyName";
