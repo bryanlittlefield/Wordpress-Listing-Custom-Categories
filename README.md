@@ -20,7 +20,7 @@ foreach($terms as $term): ?>
 <?php endforeach; ?>
 ```
 
-####List Out Categories and Children and Post Within
+####List Out Categories and Children and Posts Within
 ```php
 <div>
 <?php
@@ -34,10 +34,10 @@ foreach($terms as $term): ?>
         <?php $term_child = get_term_by('id',$term_child_id,$taxonomyName); ?>
         <li><a href="#<?php echo strtolower($term_child->name); ?>"><?php echo $term_child->name; ?></a>
   		<ul>
-			<?php $child_name =  $term_child->name;?>
+			<?php $child_slug =  $term_child->slug;?>
 			<?php
 			$args=array(
-			  'fruit' => $child_name,
+			  $taxonomyName => $child_slug,
 			  'post_type' => 'service_areas',
 			  'post_status' => 'publish',
 			  'posts_per_page' => 5,
